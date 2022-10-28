@@ -1,0 +1,19 @@
+.NavBar {
+  display: flex;
+}
+
+.NavBar-link {
+  display: block;
+  width: 250px;
+  padding: 14px 30px;
+  background-color: #257dae;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.NavBar-link_left {
+  margin-right: 20px;
+  background-color: #51c943;
+}

@@ -1,0 +1,18 @@
+.Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#logo {
+  width: 210px;
+  margin-bottom: 15px;
+}
