@@ -1,9 +1,13 @@
 import React from 'react'
 import { NavBar } from '../../components/NavBar/NavBar'
+import { store } from '../../store'
 import logo from './../../assets/logo.png'
 import './Home.css'
 
 export const Home = () => {
+
+  console.log('estado actual --> ', store.getState())
+
   return (
     <div className='Home'>
       <div className='container'>

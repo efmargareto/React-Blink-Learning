@@ -4,41 +4,99 @@
   box-sizing: border-box;
 }
 
-.App {
+.button {
+  display: block;
+  width: 250px;
+  padding: 14px 30px;
+  background-color: #247DAE;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button1 {
+  margin-right: 20px;
+  background-color: #8475ab;
+}
+
+.button-green {
+  background-color: #51c943;
+}
+
+.correct {
+  background-color: #51c943;
+}
+
+.incorrect {
+  background-color: #f43434;
+}
+
+
+.m-0 {
+  margin: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.exercice,
+.result {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task {
+  width: 250px;
+  position: relative;
+  border: 1px solid;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 35px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: #247DAE;
+  color: #fff;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
