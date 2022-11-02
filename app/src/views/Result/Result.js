@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { store } from '../../store.js';
 import { useNavigate } from "react-router-dom";
 
 export const Result = () => {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    !store.getState()?.enableResult && navigate('/') 
+  }, [])
 
   const paintResult = () => {
     return store.getState().content.map( (elem, ind) => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import { useNavigate } from "react-router-dom";
 import { store } from '../../store.js';
@@ -34,6 +34,10 @@ export const Exercice = () => {
   const [tasks, setTasks] = useState(options);
   const navigate = useNavigate()
 
+  useEffect(() => {
+    store.getState()?.enableExercice !== undefined && navigate('/') 
+  }, [])
+
   const saveResult = () => {
     const orderTask = document.querySelectorAll("div[data-rbd-droppable-id='options'] div .task-text")
     const result = []
@@ -49,7 +53,8 @@ export const Exercice = () => {
       type: 'NEW_RESULT',
       payload: {
         content: result,
-        enableResult: true
+        enableResult: true,
+        enableExercice: !false
       }
     })
 

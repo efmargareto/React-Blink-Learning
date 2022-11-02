@@ -24,15 +24,6 @@
   background-color: #51c943;
 }
 
-.correct {
-  background-color: #51c943;
-}
-
-.incorrect {
-  background-color: #f43434;
-}
-
-
 .m-0 {
   margin: 0;
 }
@@ -93,6 +84,17 @@ h2 {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+.correct {
+  border-color: #fff;
+  background-color: rgba(81, 201, 69, .5);
+}
+
+.incorrect {
+  border-color: #fff;
+  background-color: rgba(244, 52, 52, 0.60);
+}
+
 
 
 

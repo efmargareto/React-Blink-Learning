@@ -1,3 +1,12 @@
 .NavBar {
   display: flex;
 }
+
+@media (max-width: 600px) {
+  .NavBar {
+    flex-direction: column;
+  }
+  .NavBar .button1 {
+    margin-bottom: 10px;
+  }
+}
