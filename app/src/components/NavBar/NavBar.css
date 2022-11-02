@@ -9,4 +9,7 @@
   .NavBar .button1 {
     margin-bottom: 10px;
   }
+  .button1 {
+    margin-right: 0;
+  }
 }

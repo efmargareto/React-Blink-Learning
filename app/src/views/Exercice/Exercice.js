@@ -2,24 +2,23 @@ import React, { useEffect, useState } from 'react'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import { useNavigate } from "react-router-dom";
 import { store } from '../../store.js';
-import './Exercice.css'
 
 const options = [
   {
-    id: "1",
-    text: "A",
-  },
-  {
     id: "2",
-    text: "B",
-  },
-  {
-    id: "3",
-    text: "C",
+    text: "JavaScript",
   },
   {
     id: "4",
-    text: "D",
+    text: "React",
+  },
+  {
+    id: "3",
+    text: "PHP",
+  },
+  {
+    id: "1",
+    text: "CSS",
   },
 ];
 
@@ -54,7 +53,7 @@ export const Exercice = () => {
       payload: {
         content: result,
         enableResult: true,
-        enableExercice: !false
+        enableExercice: true
       }
     })
 
@@ -79,7 +78,7 @@ export const Exercice = () => {
     >
       <div className="exercice">
         <div className='container'>
-          <h1>Ordena alfabeticamente las siguientes palabras</h1>
+          <h1>Ordena alfabéticamente las siguientes palabras:</h1>
           <Droppable droppableId="options" className='options'>
             {(droppableProvided) => (
               <div
